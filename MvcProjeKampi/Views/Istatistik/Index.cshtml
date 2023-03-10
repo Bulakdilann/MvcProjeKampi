@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2>İstatistik Sayfası</h2>
+<br />
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3 rounded  bg-danger">
+            <h3>Toplam kategori sayısı</h3>
+            <h4>Sonuç : @ViewBag.deger1</h4>
+            <br /><br />
+           
+        </div>
+        <div class="col-sm-3 rounded bg-gradient-fuchsia ml-2">
+            <h3>"Yazılım" kategorisine ait başlık sayısı</h3>
+            <h4>Sonuç : @ViewBag.deger2</h4>
+        </div>
+        <div class="col-sm-3 rounded bg-lime  ml-2">
+            <h3>Yazar adında 'a' harfi geçen yazar sayısı</h3>
+            <h4>Sonuç : @ViewBag.deger3</h4>
+        </div>
+    </div>
+</div>
+<br>
+<div class="container  ">
+    <div class="row ">
+        <div class="col-sm-3 rounded bg-blue">
+            <h3>En fazla başlığa sahip kategori adı</h3>
+            <h4>Sonuc : @ViewBag.deger4</h4>
+            <br /><br />
+        </div>
+        <br />
+        <div class="col-sm-3  rounded  bg-gradient-warning  ml-2">
+            <h3>True-False Fark</h3>
+            <h4>Sonuç : @ViewBag.deger5</h4>
+        </div>
+
+    </div>
+</div>
+
+
+
+
