@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    class ContentManager : IContentService
+   public class ContentManager : IContentService
     {
         IContentDal _contentDal;
 
@@ -43,7 +43,7 @@ namespace BusinessLayer.Concrete
             return _contentDal.List();
         }
 
-        public List<Content> GetListById(int id)
+        public List<Content> GetListByHeadingId(int id)
         {
             return _contentDal.List(x=>x.HeadingID==id);
         }
