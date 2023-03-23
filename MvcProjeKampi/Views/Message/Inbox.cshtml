@@ -81,15 +81,15 @@
                                                 </div>
                                             </td>
 
-                                            <td class="mailbox-star"><a href="/Contact/GetContactDetails/@x.MessageId"><i class="fas fa-star text-warning"></i></a></td>
-                                            <td class="mailbox-name"><a href="/Contact/GetContactDetails/@x.MessageId">@x.SenderMail</a></td>
+                                            <td class="mailbox-star"><a href="/Message/GetInboxMessageDetails/@x.MessageId"><i class="fas fa-star text-warning"></i></a></td>
+                                            <td class="mailbox-name"><a href="/Message/GetInboxMessageDetails/@x.MessageId">@x.SenderMail</a></td>
                                             <td class="mailbox-subject">
                                                 <b>@x.Subject</b> @x.MessageContent.Substring(0, 20)...
 
 
                                             </td>
                                             <td class="mailbox-attachment"></td>
-                                            <td class="mailbox-date">5 mins ago</td>
+                                            <td class="mailbox-date">  @(((DateTime)x.MessageDate).ToString("dd-MMM-yyyy"))</td>
                                         </tr>
                                     }
 
